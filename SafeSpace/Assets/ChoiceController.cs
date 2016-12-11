@@ -8,11 +8,9 @@ public class ChoiceController : MonoBehaviour {
 	public int badCount = 0;
 	public Text statsText;
 
-	// Use this for initialization
 	void Start () {
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 	}
 
@@ -22,18 +20,10 @@ public class ChoiceController : MonoBehaviour {
 	}
 
 	public void ChooseGood () {
-		// FIXME: hack
-		if (goodCount + badCount >= 5) {
-			Application.Quit ();
-		}
 		goodCount++;
 	}
 
 	public void ChooseBad () {
-		// FIXME: hack
-		if (goodCount + badCount >= 5) {
-			Application.Quit ();
-		}
 		badCount++;
 	}
 

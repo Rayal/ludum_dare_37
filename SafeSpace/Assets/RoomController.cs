@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RoomController : MonoBehaviour {
-	public GameObject controllers;
+	public GameObject animation;
 
 	void Start () {
 		//controllers = GameObject.Find ("Controllers");
@@ -13,7 +13,7 @@ public class RoomController : MonoBehaviour {
 	}
 
 	public void PresentCurrentRoom () {
-		controllers.SendMessage ("Reset");
+		animation.SendMessage ("Reset");
 		DisplayDialog ();
 	}
 
