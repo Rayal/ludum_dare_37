@@ -47,12 +47,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\ChoiceController.cs" />
-     <Compile Include="Assets\ClickHandler.cs" />
      <Compile Include="Assets\GameAnimation.cs" />
      <Compile Include="Assets\GameController.cs" />
      <Compile Include="Assets\MainMenuController.cs" />
-     <Compile Include="Assets\MoveInLeft.cs" />
-     <Compile Include="Assets\MoveInRight.cs" />
      <Compile Include="Assets\RoomController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
