@@ -3,14 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RoomController : MonoBehaviour {
-	private GameObject character;
-	private GameObject baddie;
-	private GameObject controllers;
+	public GameObject controllers;
 
 	void Start () {
-		character = GameObject.Find ("Character");
-		baddie = GameObject.Find ("Baddie");
-		controllers = GameObject.Find ("Controllers");
+		//controllers = GameObject.Find ("Controllers");
 	}
 
 	void Update () {

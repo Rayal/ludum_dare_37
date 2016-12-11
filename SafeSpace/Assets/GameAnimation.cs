@@ -31,8 +31,8 @@ public class GameAnimation : MonoBehaviour {
 		}
 	}
 
-	XAnimation characterAnimation = new XAnimation(new Vector3(-5f, -2.8f, 0f), new Vector3(-3f, -2.8f, 0f));
-	XAnimation baddieAnimation = new XAnimation(new Vector3(5f, -2.8f, 0f), new Vector3(3f, -2.8f, 0f));
+	XAnimation characterAnimation = new XAnimation(new Vector3(-12f, -2.8f, 0f), new Vector3(-3f, -2.8f, 0f));
+	XAnimation baddieAnimation = new XAnimation(new Vector3(12f, -2.8f, 0f), new Vector3(3f, -2.8f, 0f));
 
 	void Start () {	
 	}

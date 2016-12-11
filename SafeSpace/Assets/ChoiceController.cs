@@ -22,10 +22,18 @@ public class ChoiceController : MonoBehaviour {
 	}
 
 	public void ChooseGood () {
+		// FIXME: hack
+		if (goodCount + badCount >= 5) {
+			Application.Quit ();
+		}
 		goodCount++;
 	}
 
 	public void ChooseBad () {
+		// FIXME: hack
+		if (goodCount + badCount >= 5) {
+			Application.Quit ();
+		}
 		badCount++;
 	}
 
