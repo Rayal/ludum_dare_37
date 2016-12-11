@@ -48,7 +48,6 @@
   <ItemGroup>
      <Compile Include="Assets\ChoiceController.cs" />
      <Compile Include="Assets\ClickHandler.cs" />
-     <Compile Include="Assets\Game.cs" />
      <Compile Include="Assets\GameAnimation.cs" />
      <Compile Include="Assets\GameController.cs" />
      <Compile Include="Assets\MainMenuController.cs" />
