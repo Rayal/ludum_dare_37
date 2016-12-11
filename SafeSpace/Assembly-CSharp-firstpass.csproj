@@ -6,10 +6,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{0FF8031D-960F-6441-D938-315C9270B88F}</ProjectGuid>
+    <ProjectGuid>{3F832638-71D9-1BF8-048B-ADC7AB3526D8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>Assets</BaseDirectory>
@@ -46,14 +46,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\DialogController.cs" />
-     <Compile Include="Assets\DialogDatabase.cs" />
-     <Compile Include="Assets\DialogEdge.cs" />
-     <Compile Include="Assets\DialogNode.cs" />
-     <Compile Include="Assets\GameAnimation.cs" />
-     <Compile Include="Assets\GameController.cs" />
-     <Compile Include="Assets\MainMenuController.cs" />
-     <Compile Include="Assets\RoomController.cs" />
+     <Compile Include="Assets\Plugins\UnityTwine\Core\TwineDisplay.cs" />
+     <Compile Include="Assets\Plugins\UnityTwine\Core\TwineLink.cs" />
+     <Compile Include="Assets\Plugins\UnityTwine\Core\TwineOutput.cs" />
+     <Compile Include="Assets\Plugins\UnityTwine\Core\TwinePassage.cs" />
+     <Compile Include="Assets\Plugins\UnityTwine\Core\TwineStory.cs" />
+     <Compile Include="Assets\Plugins\UnityTwine\Core\TwineStoryState.cs" />
+     <Compile Include="Assets\Plugins\UnityTwine\Core\TwineText.cs" />
+     <Compile Include="Assets\Plugins\UnityTwine\Core\TwineVar.cs" />
+     <Compile Include="Assets\Plugins\UnityTwine\Examples\Snoozing\Script\ImageFade.cs" />
+     <Compile Include="Assets\Plugins\UnityTwine\Examples\Snoozing\Script\SnoozingHooks.cs" />
+     <Compile Include="Assets\Plugins\UnityTwine\Examples\Snoozing\Twine\SnoozingStory.cs" />
+     <Compile Include="Assets\Plugins\UnityTwine\TwineTextPlayer\TwineTextPlayer.cs" />
+     <None Include="Assets\Plugins\UnityTwine\Examples\Snoozing\Fonts\Pompiere\OFL.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

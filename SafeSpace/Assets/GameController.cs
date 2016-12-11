@@ -5,26 +5,22 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
 	public GameObject room;
+	public GameObject dialog;
 	public Text statsText;
 	public int morality = 0;
 	private int roomIdx = 0;
 	private int roomsCount = 5;
 
 	void Start () {
-		room.SendMessage ("PresentCurrentRoom");
+		DialogDatabase.Build ();
+		dialog.SendMessage ("RenderNode", "moralDilemmaRoot");
 	}
 
 	void Update () {
 	}
 
-	public void ChooseGood () {
-		morality++;
-		Advance ();
-	}
-
-	public void ChooseBad () {
-		morality--;
-		Advance ();
+	public void ApplyConsequence (int dMorality) {
+		morality += dMorality;
 	}
 
 	public void Advance () {
