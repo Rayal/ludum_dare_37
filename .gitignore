@@ -1,4 +1,7 @@
-Library/metadata*
-*.log
-Library/ScriptAssemblies*
-Temp/*
+Assembly-CSharp.csproj
+Library/
+ProjectSettings/
+Temp/
+ludum_2.sln
+ludum_2.userprefs
+obj/
