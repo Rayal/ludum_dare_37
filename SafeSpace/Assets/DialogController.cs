@@ -26,17 +26,23 @@ public class DialogController : MonoBehaviour {
 		text.text = node.text;
 		int idxEdge = 0;
 		foreach (DialogEdge edge in node.edges) {
-			float y = choices [idxEdge].transform.position.y;
-			choices [idxEdge].transform.position = new Vector2 (231.5f, y);
-			choices [idxEdge].GetComponentInChildren<Text> ().text = edge.description;
+			Button choice = choices [idxEdge];
+			RenderChoice (choice, edge);
 			idxEdge++;
 		}
 	}
 
 	private void DisableChoices () {
 		foreach (Button choice in choices) {
-			float y = choice.transform.position.y;
-			choice.transform.position = new Vector2 (10000, y);
+			choice.gameObject.SetActive (false);
 		}
+	}
+
+	private void RenderChoice(Button btn, DialogEdge edge) {
+		btn.gameObject.SetActive (true);
+		btn.GetComponentInChildren<Text> ().text = edge.description;
+		btn.onClick.AddListener (() => {
+			RenderNode (edge.destinationId);
+		});
 	}
 }
