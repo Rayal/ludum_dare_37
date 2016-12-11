@@ -4,14 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
-	private GameObject controllers;
+	public GameObject room;
+	public GameObject choice;
 	private int roomIdx = 0;
 	private int roomsCount = 5;
 
 	void Start () {
-		controllers = GameObject.Find ("Controllers");
-
-		controllers.SendMessage ("PresentCurrentRoom");
+		room.SendMessage ("PresentCurrentRoom");
 	}
 
 	void Update () {
@@ -20,8 +19,8 @@ public class GameController : MonoBehaviour {
 	public void Advance () {
 		roomIdx++;
 		if (roomIdx < roomsCount)
-			controllers.SendMessage ("PresentCurrentRoom");
+			room.SendMessage ("PresentCurrentRoom");
 		else
-			controllers.SendMessage ("PresentStats");
+			choice.SendMessage ("PresentStats");
 	}
 }
