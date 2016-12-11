@@ -4,3 +4,10 @@ Library/ScriptAssemblies*
 Temp/*
 SafeSpace/Temp/*
 SafeSpace/Library/*
+Assembly-CSharp.csproj
+Library/
+ProjectSettings/
+Temp/
+ludum_2.sln
+ludum_2.userprefs
+obj/

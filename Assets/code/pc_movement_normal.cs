@@ -11,7 +11,7 @@ public class pc_movement_normal : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetButtonDown ("Fire2")) {
+		if (Input.GetMouseButtonUp (1)) {
 			mouse_pos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 			mouse_pos.y = transform.position.y;
 			mouse_pos.z = transform.position.z;
