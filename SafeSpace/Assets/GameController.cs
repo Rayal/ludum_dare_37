@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
 	public GameObject room;
-	public GameObject choice;
+	public Text statsText;
+	public int morality = 0;
 	private int roomIdx = 0;
 	private int roomsCount = 5;
 
@@ -16,11 +17,25 @@ public class GameController : MonoBehaviour {
 	void Update () {
 	}
 
+	public void ChooseGood () {
+		morality++;
+		Advance ();
+	}
+
+	public void ChooseBad () {
+		morality--;
+		Advance ();
+	}
+
 	public void Advance () {
 		roomIdx++;
 		if (roomIdx < roomsCount)
 			room.SendMessage ("PresentCurrentRoom");
 		else
-			choice.SendMessage ("PresentStats");
+			PresentStats ();
+	}
+
+	private void PresentStats () {
+		statsText.text = "You finished with a net morality of " + morality;
 	}
 }

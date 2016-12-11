@@ -46,7 +46,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ChoiceController.cs" />
      <Compile Include="Assets\GameAnimation.cs" />
      <Compile Include="Assets\GameController.cs" />
      <Compile Include="Assets\MainMenuController.cs" />
