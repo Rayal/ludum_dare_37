@@ -49,7 +49,9 @@
      <Compile Include="Assets\DialogController.cs" />
      <Compile Include="Assets\DialogDatabase.cs" />
      <Compile Include="Assets\DialogEdge.cs" />
+     <Compile Include="Assets\DialogEdgeContainer.cs" />
      <Compile Include="Assets\DialogNode.cs" />
+     <Compile Include="Assets\DialogNodeContainer.cs" />
      <Compile Include="Assets\Encounter.cs" />
      <Compile Include="Assets\EncounterController.cs" />
      <Compile Include="Assets\EncounterDatabase.cs" />
@@ -58,6 +60,7 @@
      <Compile Include="Assets\MainMenuController.cs" />
      <Compile Include="Assets\MoralityController.cs" />
      <Compile Include="Assets\RoomController.cs" />
+     <None Include="Assets\stsenaarium.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

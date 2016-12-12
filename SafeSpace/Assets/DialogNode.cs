@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Xml.Serialization;
 
 public class DialogNode {
+	[XmlAttribute("id")]
 	public string id;
+
 	public string text;
 	public DialogEdge[] edges;
 	public int consequence;
