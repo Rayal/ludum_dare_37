@@ -19,21 +19,17 @@ public class pc_movement_normal : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetMouseButton (1)) {
+		if (Input.GetMouseButton (0) || Input.GetMouseButton (1)) {
 			mouse_pos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 			mouse_pos.y = transform.position.y;
 			mouse_pos.z = transform.position.z;
 		}
 		int delta = Mathf.FloorToInt(mouse_pos.x - transform.position.x);
-		//if (delta < 0.5 && delta > -0.5)
-		//	delta = 0;
 		
 		anim.SetFloat("speed", Mathf.Abs (delta));
 		if (delta != 0) {
 			gameObject.GetComponent<SpriteRenderer> ().flipX = (delta < 0);
 			transform.Translate (Time.deltaTime * delta, 0, 0);
 		}
-
-		//TODO: Action for mouse button 0
 	}
 }
