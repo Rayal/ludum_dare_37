@@ -6,7 +6,7 @@ public class EncounterDatabase {
 	public static Dictionary<string, Encounter> encounters = new Dictionary<string, Encounter>();
 
 	public static void Build() {
-		Encounter hornyBeast = new Encounter ("hornyBeast", "hornyBeast", "moralDilemmaRoot");
+		Encounter hornyBeast = new Encounter ("red1-0", "red1-0", "red1-0");
 		AddEncounter (hornyBeast);
 	}
 

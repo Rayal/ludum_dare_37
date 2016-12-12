@@ -56,7 +56,7 @@ public class npc_movement : MonoBehaviour {
 				encouter_screen.transform.position.y - Camera.main.transform.position.y,
 				Camera.main.transform.position.z);
 				**/
-			dialog.SendMessage ("StartDialog", "hornyBeast");
+			dialog.SendMessage ("StartDialog", "red1-0");
 		}
 		encounter_done = true;
 	}
