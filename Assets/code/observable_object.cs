@@ -19,8 +19,7 @@ public class observable_object : MonoBehaviour {
 	void OnMouseUp()
 	{
 		Debug.Log ("Mouse clicked me.");
-		var instance = Instantiate (target); // Resources.Load ("SPR_ME")
-		//instance = instance;
+		var instance = Instantiate (target);
 	}
 
 }
