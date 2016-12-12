@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class change_Screen : MonoBehaviour {
-	Vector3 camera_pos;
+public class shift_screen : MonoBehaviour {
+	public Vector3 screen_size;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -13,7 +14,7 @@ public class change_Screen : MonoBehaviour {
 	
 	}
 
-	void OnTriggerEnter(Collider other) {
-
+	void OnTriggerEnter(Collider other){
+		Camera.main.transform.Translate (screen_size);
 	}
 }
