@@ -26,5 +26,11 @@ public class follow_player : MonoBehaviour {
 			(offset != 0 && camera_unlimited)){
 			transform.Translate (offset, 0, 0);
 		}
+		else if (pc_object.transform.position.x <= -camera_limit) {
+			transform.position = new Vector3(-camera_limit, transform.position.y, transform.position.z);
+		}
+		else if (pc_object.transform.position.x >= camera_limit) {
+			transform.position = new Vector3(camera_limit, transform.position.y, transform.position.z);
+		}
 	}
 }
