@@ -53,7 +53,7 @@ public class npc_movement : MonoBehaviour {
 		//TODO: Start encounter
 	}
 
-	void OnTriggerEnter (Collider other) {
+	void OnTriggerEnter2D (Collider2D other) {
 		Debug.Log ("Here");
 		Camera.main.GetComponent<follow_player> ().follow_pc = false;
 		Camera.main.transform.Translate(encouter_screen.transform.position.x - Camera.main.transform.position.x,
