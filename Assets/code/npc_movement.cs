@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class pc_movement_normal : MonoBehaviour {
+public class npc_movement_normal : MonoBehaviour {
 	public Vector3 start_position;
 	public bool use_def_pos = true;
+	public float target_pos;
+	public bool punch = false;
 
-	float target_pos;
 	Animator anim;
 	int delta = 0;
 	//bool move_to_point = false;
@@ -17,27 +18,13 @@ public class pc_movement_normal : MonoBehaviour {
 
 		anim = GetComponent<Animator> ();
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyUp (KeyCode.LeftArrow) || Input.GetKeyUp (KeyCode.RightArrow))
-			target_pos = transform.position.x;
-		else if (Input.GetKey (KeyCode.LeftArrow)) {
-			target_pos = transform.position.x - 2;
-			if (Input.GetKey (KeyCode.LeftShift) || Input.GetKey (KeyCode.RightShift))
-				target_pos -= 6;
-		} else if (Input.GetKey (KeyCode.RightArrow)) {
-			target_pos = transform.position.x + 2;
-			if (Input.GetKey (KeyCode.LeftShift) || Input.GetKey (KeyCode.RightShift))
-				target_pos += 6;
-		} else if (Input.GetMouseButton (1)) {
-			target_pos = Camera.main.ScreenToWorldPoint (Input.mousePosition).x;
-		}
-
 		delta = Mathf.FloorToInt (target_pos - transform.position.x);
 
 		transform.Translate (Time.deltaTime * delta, 0, 0);
-		
+
 		anim.SetFloat("speed", Mathf.Abs (delta));
 		if (delta < 0)
 			gameObject.GetComponent<SpriteRenderer> ().flipX = true;
@@ -45,15 +32,11 @@ public class pc_movement_normal : MonoBehaviour {
 			gameObject.GetComponent<SpriteRenderer> ().flipX = false;
 
 		stop_punch ();
-		if (Input.GetKeyDown (KeyCode.Space))
-			punch ();
-	}
-
-	void punch() {
-		anim.SetBool ("attack", true);
+		anim.SetBool ("attack", punch);
 	}
 
 	void stop_punch(){
+		punch = true;
 		anim.SetBool ("attack", false);
 	}
 }

@@ -1,20 +1,20 @@
 fileFormatVersion: 2
-guid: b5a089964b86bfa429627e7c37f24347
-timeCreated: 1481496565
+guid: ac85d2a7501ddba40a1853abf4090202
+timeCreated: 1481500403
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: hero_0
-    21300002: hero_1
-    21300004: hero_2
-    21300006: hero_3
-    21300008: hero_4
-    21300010: hero_5
-    21300012: hero_6
-    21300014: hero_7
-    21300016: hero_8
-    21300018: hero_9
-    21300020: hero_10
+    21300000: green_0
+    21300002: green_1
+    21300004: green_2
+    21300006: green_3
+    21300008: green_4
+    21300010: green_5
+    21300012: green_6
+    21300014: green_7
+    21300016: green_8
+    21300018: green_9
+    21300020: green_10
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -64,7 +64,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hero_0
+      name: green_0
       rect:
         serializedVersion: 2
         x: 17
@@ -72,12 +72,12 @@ TextureImporter:
         width: 40
         height: 121
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hero_1
+      name: green_1
       rect:
         serializedVersion: 2
         x: 94
@@ -85,12 +85,12 @@ TextureImporter:
         width: 40
         height: 123
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hero_2
+      name: green_2
       rect:
         serializedVersion: 2
         x: 169
@@ -98,12 +98,12 @@ TextureImporter:
         width: 41
         height: 123
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hero_3
+      name: green_3
       rect:
         serializedVersion: 2
         x: 238
@@ -111,12 +111,12 @@ TextureImporter:
         width: 53
         height: 122
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hero_4
+      name: green_4
       rect:
         serializedVersion: 2
         x: 318
@@ -124,12 +124,12 @@ TextureImporter:
         width: 44
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hero_5
+      name: green_5
       rect:
         serializedVersion: 2
         x: 398
@@ -137,12 +137,12 @@ TextureImporter:
         width: 40
         height: 121
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hero_6
+      name: green_6
       rect:
         serializedVersion: 2
         x: 474
@@ -150,12 +150,12 @@ TextureImporter:
         width: 40
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hero_7
+      name: green_7
       rect:
         serializedVersion: 2
         x: 542
@@ -163,12 +163,12 @@ TextureImporter:
         width: 51
         height: 116
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hero_8
+      name: green_8
       rect:
         serializedVersion: 2
         x: 613
@@ -176,12 +176,12 @@ TextureImporter:
         width: 70
         height: 118
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hero_9
+      name: green_10
       rect:
         serializedVersion: 2
         x: 692

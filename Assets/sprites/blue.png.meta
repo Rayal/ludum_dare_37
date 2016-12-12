@@ -1,20 +1,20 @@
 fileFormatVersion: 2
-guid: b5a089964b86bfa429627e7c37f24347
-timeCreated: 1481496565
+guid: d71430359876ace45a9bb0806d0b8e29
+timeCreated: 1481500419
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: hero_0
-    21300002: hero_1
-    21300004: hero_2
-    21300006: hero_3
-    21300008: hero_4
-    21300010: hero_5
-    21300012: hero_6
-    21300014: hero_7
-    21300016: hero_8
-    21300018: hero_9
-    21300020: hero_10
+    21300000: blue_0
+    21300002: blue_1
+    21300004: blue_2
+    21300006: blue_3
+    21300008: blue_4
+    21300010: blue_5
+    21300012: blue_6
+    21300014: blue_7
+    21300016: blue_8
+    21300018: blue_9
+    21300020: blue_10
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -64,7 +64,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hero_0
+      name: blue_0
       rect:
         serializedVersion: 2
         x: 17
@@ -72,12 +72,12 @@ TextureImporter:
         width: 40
         height: 121
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hero_1
+      name: blue_1
       rect:
         serializedVersion: 2
         x: 94
@@ -85,12 +85,12 @@ TextureImporter:
         width: 40
         height: 123
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hero_2
+      name: blue_2
       rect:
         serializedVersion: 2
         x: 169
@@ -98,12 +98,12 @@ TextureImporter:
         width: 41
         height: 123
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hero_3
+      name: blue_3
       rect:
         serializedVersion: 2
         x: 238
@@ -111,12 +111,12 @@ TextureImporter:
         width: 53
         height: 122
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hero_4
+      name: blue_4
       rect:
         serializedVersion: 2
         x: 318
@@ -124,12 +124,12 @@ TextureImporter:
         width: 44
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hero_5
+      name: blue_5
       rect:
         serializedVersion: 2
         x: 398
@@ -137,12 +137,12 @@ TextureImporter:
         width: 40
         height: 121
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hero_6
+      name: blue_6
       rect:
         serializedVersion: 2
         x: 474
@@ -150,12 +150,12 @@ TextureImporter:
         width: 40
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hero_7
+      name: blue_7
       rect:
         serializedVersion: 2
         x: 542
@@ -163,12 +163,12 @@ TextureImporter:
         width: 51
         height: 116
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hero_8
+      name: blue_8
       rect:
         serializedVersion: 2
         x: 613
@@ -176,12 +176,12 @@ TextureImporter:
         width: 70
         height: 118
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hero_9
+      name: blue_10
       rect:
         serializedVersion: 2
         x: 692

@@ -1,20 +1,19 @@
 fileFormatVersion: 2
-guid: b5a089964b86bfa429627e7c37f24347
-timeCreated: 1481496565
+guid: 433de16ebe23baf45aac237955bb903e
+timeCreated: 1481500185
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: hero_0
-    21300002: hero_1
-    21300004: hero_2
-    21300006: hero_3
-    21300008: hero_4
-    21300010: hero_5
-    21300012: hero_6
-    21300014: hero_7
-    21300016: hero_8
-    21300018: hero_9
-    21300020: hero_10
+    21300000: red_0
+    21300002: red_1
+    21300004: red_2
+    21300006: red_3
+    21300008: red_4
+    21300010: red_5
+    21300012: red_6
+    21300014: red_7
+    21300016: red_8
+    21300018: red_9
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -64,7 +63,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hero_0
+      name: red_0
       rect:
         serializedVersion: 2
         x: 17
@@ -77,7 +76,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hero_1
+      name: red_1
       rect:
         serializedVersion: 2
         x: 94
@@ -90,7 +89,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hero_2
+      name: red_2
       rect:
         serializedVersion: 2
         x: 169
@@ -103,7 +102,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hero_3
+      name: red_3
       rect:
         serializedVersion: 2
         x: 238
@@ -116,7 +115,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hero_4
+      name: red_4
       rect:
         serializedVersion: 2
         x: 318
@@ -129,7 +128,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hero_5
+      name: red_5
       rect:
         serializedVersion: 2
         x: 398
@@ -142,7 +141,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hero_6
+      name: red_6
       rect:
         serializedVersion: 2
         x: 474
@@ -155,7 +154,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hero_7
+      name: red_7
       rect:
         serializedVersion: 2
         x: 542
@@ -168,7 +167,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hero_8
+      name: red_8
       rect:
         serializedVersion: 2
         x: 613
@@ -181,7 +180,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: hero_9
+      name: red_9
       rect:
         serializedVersion: 2
         x: 692
