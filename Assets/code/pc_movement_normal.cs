@@ -55,5 +55,17 @@ public class pc_movement_normal : MonoBehaviour {
 
 	void stop_punch(){
 		anim.SetBool ("attack", false);
+		if (Input.GetMouseButton (0) || Input.GetMouseButton (1)) {
+			mouse_pos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+			mouse_pos.y = transform.position.y;
+			mouse_pos.z = transform.position.z;
+		}
+		int delta = Mathf.FloorToInt(mouse_pos.x - transform.position.x);
+		
+		anim.SetFloat("speed", Mathf.Abs (delta));
+		if (delta != 0) {
+			gameObject.GetComponent<SpriteRenderer> ().flipX = (delta < 0);
+			transform.Translate (Time.deltaTime * delta, 0, 0);
+		}
 	}
 }
