@@ -8,8 +8,6 @@ public class DialogDatabase {
 	public static Dictionary<string, DialogNode> nodes = new Dictionary<string, DialogNode>();
 
 	public static void Build () {
-		var serializer = new XmlSerializer ();
-
 		AddNode (new DialogNode ("moralDilemmaRoot", "This is a moral dilemma", new DialogEdge[] {
 			new DialogEdge ("Choose good", "goodConsequence"),
 			new DialogEdge ("Choose bad", "badConsequence")

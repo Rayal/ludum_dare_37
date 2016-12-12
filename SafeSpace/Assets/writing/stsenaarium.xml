@@ -1,0 +1,87 @@
+<nodes>	
+	<node id = "Day1" >
+		<text>The ritual will still take a while to finish. 
+		Many thoughts cloud your mind.
+		As the flames flicker, you reflect upon your life.</text>
+		<choices>
+		</choices>
+		<consequence>0</consequence>
+	</node>
+	
+	<node id = "Green1-0" >
+		<text>You are greeted by Green, your best friend since childhood.
+		Hi, White!
+		How are you doing in the Occultism 101?</text>
+		<choices>
+			<choice to="Green1-1" >Well enough, I suppose. Listen, I need to be somewhere. (Ignore Green)</choice>
+			<choice to="Green1-2" >Most excellent, do you want me to help you with it?</choice>
+		</choices>
+		<consequence>0</consequence>
+	</node>
+	<node id = "Green1-1" >
+		<text>Oh, that's ok...</text>
+		<choices></choices>
+		<consequence>-1</consequence>
+	</node>
+	<node id = "Green1-2" >
+		<text>Sweet, I will come by your house later tonight.</text>
+		<choices></choices>
+		<consequence>1</consequence>
+	</node>	
+	
+	<node id = "Yellow1-0" >
+		<text>Yellow, the school bully. He has been picking on you ever since you met.
+		Where do you think you are going, White?
+		Red won't have anything to do with the likes of you!</text>
+		<choices>
+			<choice to="Yellow1-1" >Punch Yellow right on the nose!</choice>
+			<choice to="Yellow1-2" >Get lost, Yellow! (Ignore him completely)</choice>
+		</choices>
+		<consequence>0</consequence>
+	</node>
+	<node id = "Yellow1-1" >
+		<text>Why, you little... (You have a little brawl with Yellow) </text>
+		<choices></choices>
+		<consequence>-2</consequence>
+	</node>
+	<node id = "Yellow1-2" >
+		<text>Pffft, you won't make it with her in a million years...</text>
+		<choices></choices>
+		<consequence>1</consequence>
+	</node>	
+	
+	<node id = "Red1-0" >
+		<text>It's Red.... She has been on your mind lately. 
+		Her enticing crimson skin, her majestic nose...
+		She was a sight for sore eyes, for sure.</text>
+		<choices>
+			<choice to="Red1-1" >Ask Red on a romantic date.</choice>
+			<choice to="Red1-2" >Hi Red. How are you today?</choice>
+			<choice to="Red1-3" >Stay awkwardly silent.</choice>
+		</choices>
+		<consequence>0</consequence>
+	</node>
+	<node id = "Red1-1" >
+		<text>Oh, I would love to!
+		The two of you go on a date and grow very fond of each other.</text>
+		<choices></choices>
+		<consequence>2</consequence>
+	</node>
+	<node id = "Red1-2" >
+		<text>Hi, White! I was just thinking about what Professor Pickman said.
+		Do you also think that the practice of dactylomancy in recent media covering has been increasingly skewed.
+		You spend some time chatting with Red and you grow closer.</text>
+		<choices></choices>
+		<consequence>1</consequence>
+	</node>
+		<node id = "Red1-3" >
+		<text>What's the matter, White?
+		Oh well, it's time for class anyway.
+		You awkwardly stumble away, almost losing your footing.</text>
+		<choices></choices>
+		<consequence>0</consequence>
+	</node>
+	
+
+</nodes>
+

@@ -6,27 +6,24 @@ using UnityEngine.UI;
 public class DialogController : MonoBehaviour {
 	public Text text;
 	public GameObject morality;
-	public GameObject animation;
+	//public GameObject animation;
 	public Button[] choices;
+	public GameObject pc;
 
 	void Start () {
 		DialogDatabase.Build ();
 		EncounterDatabase.Build ();
 		DisableChoices ();
-
-		// Just an example. StartDialog should be called from outside.
-		StartDialog ("hornyBeast");
 	}
 	
 	void Update () {
 	}
 
 	public void StartDialog (string encounterId) {
-		// TODO: Move camera to dialog screen.
 		Encounter encounter = EncounterDatabase.GetEncounter (encounterId);
 		// TODO: Get baddie gameObject based on encounter entityId.
 		// TODO: set animation baddie object.
-		animation.SendMessage ("Reset");
+		//animation.SendMessage ("Reset");
 		RenderNode (encounter.dialogNodeId);
 	}
 
@@ -71,7 +68,14 @@ public class DialogController : MonoBehaviour {
 		btn.GetComponentInChildren<Text> ().text = "Continue";
 		btn.onClick.RemoveAllListeners();
 		btn.onClick.AddListener (() => {
-			// TODO: Back to game.
+			Camera.main.GetComponent<follow_player> ().follow_pc = true;
+			pc.SendMessage("SetForceMotion", false);
+			Hide();
 		});
+	}
+
+	public void Hide () {
+		text.text = "";
+		DisableChoices ();
 	}
 }
