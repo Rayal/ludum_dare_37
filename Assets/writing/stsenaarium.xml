@@ -1,17 +1,17 @@
 <nodes>	
+	<!---DAY 1--->
 	<node id = "Day1" >
 		<text>The ritual will still take a while to finish. 
 		Many thoughts cloud your mind.
 		As the flames flicker, you reflect upon your life.</text>
-		<choices>
-		</choices>
+		<choices></choices>
 		<consequence>0</consequence>
 	</node>
 	
 	<node id = "Green1-0" >
 		<text>You are greeted by Green, your best friend since childhood.
-		Hi, White!
-		How are you doing in the Occultism 101?</text>
+		"Hi, White!"
+		"How are you doing in the Occultism 101?"</text>
 		<choices>
 			<choice to="Green1-1" >Well enough, I suppose. Listen, I need to be somewhere. (Ignore Green)</choice>
 			<choice to="Green1-2" >Most excellent, do you want me to help you with it?</choice>
@@ -19,20 +19,20 @@
 		<consequence>0</consequence>
 	</node>
 	<node id = "Green1-1" >
-		<text>Oh, that's ok...</text>
+		<text>"Oh, that's ok..."</text>
 		<choices></choices>
 		<consequence>-1</consequence>
 	</node>
 	<node id = "Green1-2" >
-		<text>Sweet, I will come by your house later tonight.</text>
+		<text>"Sweet, I will come by your house later tonight."</text>
 		<choices></choices>
 		<consequence>1</consequence>
 	</node>	
 	
 	<node id = "Yellow1-0" >
 		<text>Yellow, the school bully. He has been picking on you ever since you met.
-		Where do you think you are going, White?
-		Red won't have anything to do with the likes of you!</text>
+		"Where do you think you are going, White?"
+		"Red won't have anything to do with the likes of you!"</text>
 		<choices>
 			<choice to="Yellow1-1" >Punch Yellow right on the nose!</choice>
 			<choice to="Yellow1-2" >Get lost, Yellow! (Ignore him completely)</choice>
@@ -40,12 +40,12 @@
 		<consequence>0</consequence>
 	</node>
 	<node id = "Yellow1-1" >
-		<text>Why, you little... (You have a little brawl with Yellow) </text>
+		<text>"Why, you little..." (You have a little brawl with Yellow) </text>
 		<choices></choices>
 		<consequence>-2</consequence>
 	</node>
 	<node id = "Yellow1-2" >
-		<text>Pffft, you won't make it with her in a million years...</text>
+		<text>"Pffft, you won't make it with her in a million years..."</text>
 		<choices></choices>
 		<consequence>1</consequence>
 	</node>	
@@ -53,35 +53,197 @@
 	<node id = "Red1-0" >
 		<text>It's Red.... She has been on your mind lately. 
 		Her enticing crimson skin, her majestic nose...
-		She was a sight for sore eyes, for sure.</text>
+		She was a sight for sore eyes, for sure.
+		"Hi, White!"</text>
 		<choices>
 			<choice to="Red1-1" >Ask Red on a romantic date.</choice>
-			<choice to="Red1-2" >Hi Red. How are you today?</choice>
+			<choice to="Red1-2" >Hi, Red. How are you today?</choice>
 			<choice to="Red1-3" >Stay awkwardly silent.</choice>
 		</choices>
 		<consequence>0</consequence>
 	</node>
 	<node id = "Red1-1" >
-		<text>Oh, I would love to!
+		<text>"Oh, I would love to!"
 		The two of you go on a date and grow very fond of each other.</text>
 		<choices></choices>
 		<consequence>2</consequence>
 	</node>
 	<node id = "Red1-2" >
-		<text>Hi, White! I was just thinking about what Professor Pickman said.
-		Do you also think that the practice of dactylomancy in recent media covering has been increasingly skewed.
+		<text>"Hi, White! I was just thinking about what Professor Pickman said."
+		"Do you also think that the practice of dactylomancy in recent media covering has been increasingly skewed?"
 		You spend some time chatting with Red and you grow closer.</text>
 		<choices></choices>
 		<consequence>1</consequence>
 	</node>
 		<node id = "Red1-3" >
-		<text>What's the matter, White?
-		Oh well, it's time for class anyway.
+		<text>"What's the matter, White?"
+		"Oh well, it's time for class anyway."
 		You awkwardly stumble away, almost losing your footing.</text>
 		<choices></choices>
 		<consequence>0</consequence>
 	</node>
+	<!---END OF DAY 1--->
 	
+	
+	<!---DAY 2--->
+	<node id = "Day2">
+		<text>That's right. Green was your best friend.
+		You could have taken better care of him.
+		Yellow gave you quite some trouble but you never really saw or even thought about him after graduation.
+		And Red. That is where it all began for you two...</text>
+		<choices></choices>
+		<consequence>0</consequence>
+	</node>
+	
+	<node id = "Red2-0" >
+		<text>You married Red soon after graduation.
+		She started work as a news weather reporter, while you decided to focus your life on academic study of the occult.
+		You are so close to a breakthrough which could change the course of the whole world.
+		"White, my dear, I thought we could have a nice dinner together tonight?"</text>
+		<choices>
+			<choice to="Red2-1" >Sure, I will try and wrap things up earlier tonight.</choice>
+			<choice to="Red2-2" >I cannot do that, the breakthrough may be revealed any day now, I have to push forward.</choice>
+		</choices>
+		<consequence>0</consequence>
+	</node>
+	<node id = "Red2-1" >
+		<text>"How wonderful! I will prepare your favourite dish."</text>
+		<choices></choices>
+		<consequence>+2</consequence>
+	</node>
+	<node id = "Red2-2" >
+		<text>"I see. But know that I will be waiting for you, always..."</text>
+		<choices></choices>
+		<consequence>-1</consequence>
+	</node>	
+	
+	<node id = "Green2-0" >
+		<text>Green has been worried about you working too hard.
+		You know he means well but you still don't like being told what to do.
+		"White, I never see you around anymore."
+		"Aren't you pushing yourself too hard?"</text>
+		<choices>
+			<choice to="Green2-1" >Green, I am fine, stop worrying about me.</choice>
+			<choice to="Green2-2" >You are right, I know. I will take some time off soon.</choice>
+		</choices>
+		<consequence>0</consequence>
+	</node>
+	<node id = "Green2-1" >
+		<text>"Ok, White but try and keep in mind that research can wait. There is more to life."</text>
+		<choices></choices>
+		<consequence>-1</consequence>
+	</node>
+	<node id = "Green2-2" >
+		<text>"I am glad to hear that. I am sure Red will appreciate it as well."</text>
+		<choices></choices>
+		<consequence>1</consequence>
+	</node>	
+	
+	<!---END OF DAY 2--->
+	
+	
+	<!---DAY 3--->
+	<node id = "Day3">
+		<text>Your early years were full of work.
+		Had you known what was to come next, would you have acted any different?
+		Maybe this is how it was supposed to be.
+		This is, after all, what your research was for.
+		To save lives...</text>
+		<choices></choices>
+		<consequence>0</consequence>
+	</node>
+	
+	<node id = "Green3-0" >
+		<text>Green has been the only person you still talk to after Red died of cancer.
+		It came so unexpectedly and modern occultist medicine just wasn't up to the task.
+		"White, it has been almost a year now. I know it is harsh but you have to let go of her. She isn't coming back."</text>
+		<choices>
+			<choice to="Green3-1" >Yeah... I am not so sure about that. How about you just leave me alone for once.</choice>
+			<choice to="Green3-2" >Thank you for your support, Green. I really appreciate your friendship over all these years.</choice>
+		</choices>
+		<consequence>0</consequence>
+	</node>
+	<node id = "Green3-1" >
+		<text>"Have it your way..."</text>
+		<choices></choices>
+		<consequence>-1</consequence>
+	</node>
+	<node id = "Green3-2" >
+		<text>"I hope you get better soon. In fact, you are welcome to dinner at our house tonight!"
+		You feel slightly better.</text>
+		<choices></choices>
+		<consequence>1</consequence>
+	</node>	
+	
+	<node id = "Blue3-0" >
+		<text>Blue, the Occult Detective.
+		You can figure why he is here.
+		You only wonder how he found out...
+		"Mr. White? You have fallen under the inspection the Occultist Intelligence Bureau under the charge of illegal occultistic experiments upon humans."
+		"We are hereby announcing that you currently stand under investigation; any attempt to hinder us will bring upon you a criminal charge."</text>
+		<choices>
+			<choice to="Blue3-1" >Kick Blue with your fist</choice>
+			<choice to="Blue3-2" >I guess there is nothing I can do anymore...</choice>
+		</choices>
+		<consequence>0</consequence>
+	</node>
+	<node id = "Blue3-1" >
+		<text>"Yeeaaaow... What's the big idea!? Boys, we have a scoundrel on our hands!" (You are arrested)</text>
+		<choices></choices>
+		<consequence>-2</consequence>
+	</node>
+	<node id = "Blue3-2" >
+		<text>"Alright, feel free to go about your business as usual but stay out of our way."</text>
+		<choices></choices>
+		<consequence>1</consequence>
+	</node>	
+	
+	<!---END OF DAY 3--->
+	
+	<!---DAY 4--->
+	<node id = "Day4">
+		<text>Blue found nothing, of course.
+		It's not as if you didn't know it was illegal.
+		You took every measure to cover your tracks and it paid off.
+		</text>
+		<choices></choices>
+		<consequence>0</consequence>
+	</node>
+	
+	<node id = "Green4-0" >
+		<text>Green found out all about it though.
+		He found Red, frozen, waiting.
+		"What are you doing, White?"
+		"This is utter madness! You cannot resurrect her! It is simply not possible!"
+		"Even if it was possible, you would be found out and executed for treason."
+		</text>
+		<choices>
+			<choice to="Green4-1" >You are wrong, Green. It is possible. I just need a few more tries. I am doing this for the good of mankind.</choice>
+			<choice to="Green4-2" >Out of my way, Green! (Sock one right on his kisser)</choice>
+		</choices>
+		<consequence>0</consequence>
+	</node>
+	<node id = "Green4-1" >
+		<text>"You are out of your mind, White. I are playing with fire."</text>
+		<choices></choices>
+		<consequence>1</consequence>
+	</node>
+	<node id = "Green4-2" >
+		<text>"Why, White? Why?"</text>
+		<choices></choices>
+		<consequence>-2</consequence>
+	</node>	
+	<!---END OF DAY 4--->	
+	
+	<!---DAY 5--->
+	<node id = "Day5">
+		<text>Everybody has left you.
+		You are finally free to complete your research.
+		You will soon be reunited with Red. The ritual must work...
+		</text>
+		<choices></choices>
+		<consequence>0</consequence>
+	</node>
 
 </nodes>
 
