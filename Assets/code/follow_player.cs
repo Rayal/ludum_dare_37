@@ -5,19 +5,20 @@ public class follow_player : MonoBehaviour {
 	public GameObject pc_object;
 	public float world_length;
 	public bool camera_unlimited = true;
+	public bool follow_pc = true;
 
 	private float camera_limit;
 	// Use this for initialization
 	void Start () {
 		float len = Camera.main.orthographicSize * Camera.main.aspect * 2;
-		Debug.Log (len);
 		camera_limit = (world_length - len) / 2;
 		follow ();
 	}
 	
 	// Update is called once per frame
 	void LateUpdate () {
-		follow ();
+		if (follow_pc)
+			follow ();
 	}
 
 	void follow () {

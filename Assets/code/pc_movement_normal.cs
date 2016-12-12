@@ -4,8 +4,10 @@ using System.Collections;
 public class pc_movement_normal : MonoBehaviour {
 	public Vector3 start_position;
 	public bool use_def_pos = true;
+	public bool move = true;
+	public float target_pos;
+	public bool force_motion = false;
 
-	float target_pos;
 	Animator anim;
 	int delta = 0;
 	//bool move_to_point = false;
@@ -20,7 +22,8 @@ public class pc_movement_normal : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyUp (KeyCode.LeftArrow) || Input.GetKeyUp (KeyCode.RightArrow))
+		if (force_motion) {
+		} else if (Input.GetKeyUp (KeyCode.LeftArrow) || Input.GetKeyUp (KeyCode.RightArrow))
 			target_pos = transform.position.x;
 		else if (Input.GetKey (KeyCode.LeftArrow)) {
 			target_pos = transform.position.x - 2;
@@ -36,13 +39,15 @@ public class pc_movement_normal : MonoBehaviour {
 
 		delta = Mathf.FloorToInt (target_pos - transform.position.x);
 
-		transform.Translate (Time.deltaTime * delta, 0, 0);
-		
-		anim.SetFloat("speed", Mathf.Abs (delta));
-		if (delta < 0)
-			gameObject.GetComponent<SpriteRenderer> ().flipX = true;
-		else if (delta > 0)
-			gameObject.GetComponent<SpriteRenderer> ().flipX = false;
+		if (move) {
+			transform.Translate (Time.deltaTime * delta, 0, 0);
+			anim.SetFloat ("speed", Mathf.Abs (delta));
+
+			if (delta < 0)
+				gameObject.GetComponent<SpriteRenderer> ().flipX = true;
+			else if (delta > 0)
+				gameObject.GetComponent<SpriteRenderer> ().flipX = false;
+		}
 
 		stop_punch ();
 		if (Input.GetKeyDown (KeyCode.Space))
@@ -55,17 +60,5 @@ public class pc_movement_normal : MonoBehaviour {
 
 	void stop_punch(){
 		anim.SetBool ("attack", false);
-		if (Input.GetMouseButton (0) || Input.GetMouseButton (1)) {
-			mouse_pos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
-			mouse_pos.y = transform.position.y;
-			mouse_pos.z = transform.position.z;
-		}
-		int delta = Mathf.FloorToInt(mouse_pos.x - transform.position.x);
-		
-		anim.SetFloat("speed", Mathf.Abs (delta));
-		if (delta != 0) {
-			gameObject.GetComponent<SpriteRenderer> ().flipX = (delta < 0);
-			transform.Translate (Time.deltaTime * delta, 0, 0);
-		}
 	}
 }
