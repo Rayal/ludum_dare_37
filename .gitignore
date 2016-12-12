@@ -1,3 +1,9 @@
+Library/metadata*
+*.log
+Library/ScriptAssemblies*
+Temp/*
+SafeSpace/Temp/*
+SafeSpace/Library/*
 Assembly-CSharp.csproj
 Library/
 ProjectSettings/
